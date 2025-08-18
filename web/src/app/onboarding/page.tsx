@@ -454,7 +454,7 @@ export default function OnboardingPage() {
                   Informazioni Inquilino
                 </CardTitle>
                 <CardDescription>
-                  Aggiungi i dettagli dell'inquilino
+                  Aggiungi i dettagli dell&apos;inquilino
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -468,7 +468,7 @@ export default function OnboardingPage() {
                           <FormLabel>Nome completo inquilino</FormLabel>
                           <FormControl>
                             <Input
-                              placeholder="Nome e cognome dell'inquilino"
+                              placeholder="Nome e cognome dell&apos;inquilino"
                               disabled={isLoading}
                               {...field}
                             />
@@ -670,7 +670,7 @@ export default function OnboardingPage() {
                               />
                             </FormControl>
                             <FormDescription>
-                              IBAN per l'addebito automatico (MVP - solo per test)
+                              IBAN per l&apos;addebito automatico (MVP - solo per test)
                             </FormDescription>
                             <FormMessage />
                           </FormItem>

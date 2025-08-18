@@ -18,8 +18,6 @@ export default [
     rules: {
       // Add custom rules here
     },
-  },
-  {
-    ignorePatterns: ["node_modules/", ".next/", "out/"],
+    ignores: ["node_modules/**", ".next/**", "out/**"],
   },
 ];

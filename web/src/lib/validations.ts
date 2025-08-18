@@ -99,7 +99,7 @@ export const leaseSchema = z.object({
     .int("Il giorno deve essere un numero intero"),
   paymentMethod: z
     .enum(["SEPA_MANDATE", "MANUAL"], {
-      required_error: "Seleziona un metodo di pagamento",
+      message: "Seleziona un metodo di pagamento",
     }),
   iban: z
     .string()
@@ -132,7 +132,7 @@ export const onboardingSchema = z.object({
 // Schemi per il pagamento
 export const paymentUpdateSchema = z.object({
   status: z.enum(["pending", "paid", "late", "failed"], {
-    required_error: "Lo stato del pagamento è obbligatorio",
+    message: "Lo stato del pagamento è obbligatorio",
   }),
   txRef: z.string().optional(),
   notes: z.string().optional(),

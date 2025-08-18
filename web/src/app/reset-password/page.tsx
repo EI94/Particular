@@ -80,14 +80,14 @@ export default function ResetPasswordPage() {
               </div>
               <CardTitle className="text-2xl">Email inviata!</CardTitle>
               <CardDescription>
-                Abbiamo inviato le istruzioni per reimpostare la password all'indirizzo{" "}
+                Abbiamo inviato le istruzioni per reimpostare la password all&apos;indirizzo{" "}
                 <strong>{form.getValues("email")}</strong>
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="text-sm text-gray-600 space-y-2">
                 <p>• Controlla la tua casella di posta (incluso lo spam)</p>
-                <p>• Clicca sul link nell'email per reimpostare la password</p>
+                <p>• Clicca sul link nell&apos;email per reimpostare la password</p>
                 <p>• Il link è valido per 1 ora</p>
               </div>
 
