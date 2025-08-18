@@ -1,11 +1,7 @@
 {
-  "buildCommand": "cd web && pnpm build",
+  "buildCommand": "pnpm turbo build --filter=web",
   "outputDirectory": "web/.next",
   "installCommand": "pnpm install",
-  "framework": "nextjs",
-  "functions": {
-    "web/app/**/*.tsx": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "framework": null,
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
 }
