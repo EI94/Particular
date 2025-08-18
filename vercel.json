@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd web && pnpm build",
+  "outputDirectory": "web/.next",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "functions": {
+    "web/app/**/*.tsx": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
