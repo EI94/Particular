@@ -1,7 +1,3 @@
 {
-  "buildCommand": "pnpm turbo build --filter=web",
-  "outputDirectory": "web/.next",
-  "installCommand": "pnpm install",
-  "framework": null,
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
+  "outputDirectory": "web/.next"
 }

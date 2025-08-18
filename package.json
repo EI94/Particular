@@ -2,11 +2,11 @@
   "name": "Particular",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
+    "build": "turbo run build --filter=web",
+    "dev": "turbo run dev --filter=web",
+    "start": "cd web && npm start",
     "dev:web": "turbo run dev --filter=web",
     "dev:functions": "turbo run dev --filter=functions",
-    "start": "turbo run start",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
