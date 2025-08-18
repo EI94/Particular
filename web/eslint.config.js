@@ -10,7 +10,7 @@ const compat = new FlatCompat({
   recommendedConfig: { name: "eslint:recommended" },
   allConfig: { name: "eslint:all" },
 });
-
+  
 /** @type {import("eslint").Linter.Config} */
 export default [
   ...compat.extends("next/core-web-vitals"),
@@ -18,5 +18,8 @@ export default [
     rules: {
       // Add custom rules here
     },
+  },
+  {
+    ignorePatterns: ["node_modules/", ".next/", "out/"],
   },
 ];

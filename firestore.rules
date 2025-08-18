@@ -1,0 +1,36 @@
+rules_version = "2";
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Owner: solo se autenticato e accede ai propri doc
+    match /owners/{ownerId} {
+      allow read, write: if request.auth != null && request.auth.uid == ownerId;
+    }
+
+    // Documenti legati a ownerId
+    function isOwner(resourceOwnerId) {
+      return request.auth != null && request.auth.uid == resourceOwnerId;
+    }
+
+    match /units/{docId} {
+      allow read, write: if isOwner(resource.data.ownerId);
+    }
+
+    match /tenants/{docId} {
+      allow read, write: if isOwner(resource.data.ownerId);
+    }
+
+    match /leases/{docId} {
+      // consentiamo al proprietario
+      allow read, write: if request.auth != null;
+    }
+
+    match /payments/{docId} {
+      allow read, write: if request.auth != null;
+    }
+
+    match /notifications/{docId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
