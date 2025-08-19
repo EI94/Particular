@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd web && pnpm install && pnpm build",
-  "outputDirectory": "web/.next",
-  "installCommand": "echo 'Using buildCommand for install'",
-  "framework": null
-}
