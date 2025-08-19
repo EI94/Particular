@@ -1,7 +1,6 @@
 {
-  "buildCommand": "pnpm build",
-  "outputDirectory": ".next", 
-  "installCommand": "pnpm install",
-  "framework": "nextjs",
-  "rootDirectory": "web"
+  "buildCommand": "cd web && pnpm install && pnpm build",
+  "outputDirectory": "web/.next",
+  "installCommand": "echo 'Using buildCommand for install'",
+  "framework": null
 }
