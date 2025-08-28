@@ -1,0 +1,27 @@
+# Ignore build artifacts and dependencies
+.next/
+node_modules/
+.pnpm-store/
+
+# Ignore development files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore lock files (Vercel will regenerate them)
+pnpm-lock.yaml
+
+# Ignore git files
+.git/
+.gitignore
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
