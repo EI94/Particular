@@ -1,6 +1,5 @@
 {
   "buildCommand": "npm install && npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "ignoreCommand": "echo 'Skipping functions directory'"
+  "installCommand": "npm install"
 }
