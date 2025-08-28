@@ -1,0 +1,5 @@
+# Ignore functions directory during Next.js build
+functions/
+node_modules/
+.pnpm-store/
+.next/
